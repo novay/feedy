@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{{ env('APP_NAME') }} | The easiest way to collect user feedback</title>
-    <meta name="description" content="{{ env('APP_NAME') }} makes it quick and easy to collect feedback from users. Powerful campaign editor, privacy built-in, export tools, and more."/>
+    <meta name="description" content="{{ env('APP_NAME') }} makes it quick and easy to collect feedback from users. Powerful feedback editor, privacy built-in, export tools, and more."/>
     <link rel="shortcut icon" href="{{ asset('assets/landing/img/logo.png') }}" type="image/png">
 
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
@@ -34,7 +34,7 @@
                         </li>
                         <li class="nav-item">
                             <a href="https://github.com/novay/feedy" target="_blank" class="nav-link page-scroll d-flex flex-row align-items-center text-primary">
-                                <em class="fas fa-fire-alt mr-2" width="18" height="18" class="mr-2"></em>
+                                <span data-feather="github" width="18" height="18" class="mr-2"></span>
                                 {{ env('APP_NAME') }} on Github
                             </a>
                         </li>
@@ -83,8 +83,8 @@
                                     <span data-feather="edit" width="35" height="35"></span>
                                 </div>
                             </div>
-                            <h5 class="black">Advanced campaign editor</h5>
-                            <p class="text-muted">Tune your campaign to perfection with the built-in campaign editor, full of features.</p>
+                            <h5 class="black">Advanced feedback editor</h5>
+                            <p class="text-muted">Tune your feedback to perfection with the built-in feedback editor, full of features.</p>
                         </div>
                         <div class="col-md-6 box">
                             <div class="icon-box box-success">
@@ -130,7 +130,7 @@
                 </div>
                 <div class="col-md-7 offset-md-1">
                     <ul class="features-list">
-                        <li><i class="far fa-check mr-2 text-success"></i> Advanced campaign editor</li>
+                        <li><i class="far fa-check mr-2 text-success"></i> Advanced feedback editor</li>
                         <li><i class="far fa-check mr-2 text-success"></i> Powerful export tools</li>
                         <li><i class="far fa-check mr-2 text-success"></i> Easy integration</li>
                         <li><i class="far fa-check mr-2 text-success"></i> Host it yourself</li>
@@ -138,6 +138,20 @@
                         <li><i class="far fa-check mr-2 text-success"></i> Works on any site</li>
                         <li><i class="far fa-check mr-2 text-success"></i> Support included</li>
                     </ul>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-8 col-12 divider mx-auto pt-5 text-center">
+                    <h3 class="black">Another "ONE DAY" Projects</h3>
+                    <p>If you are curious and want to make something like <b>{{ env('APP_NAME') }}</b>, you can simpy clone this project through my Github page. Thanks!</p>
+                    <h6 class="black">Usage Dependencies:</h6>
+                    <p class="mb-0"><a href="https://github.com/laravel/laravel" target="_blank">Laravel</a> by Taylor Otwell</p>
+                    <p class="mb-0"><a href="https://github.com/laravolt/avatar" target="_blank">Avatar</a> by Laravolt</p>
+                    <p class="mb-4"><a href="https://github.com/fruitcake/laravel-cors" target="_blank">Cors</a> by Fruitcake (barryvdh)</p>
+                    <a href="https://github.com/novay/feedy" target="_blank" class="btn btn-dark">
+                        <span data-feather="github" width="18" height="18"></span> <br/>
+                        FORK
+                    </a>
                 </div>
             </div>
         </div>
@@ -162,11 +176,11 @@
                     </ul>
                 </div>
                 <div class="col-sm-5">
-                    <h5 class="black">BTEKNO!</h5>
-                    &copy; 2019 <a href="https://btekno.id" target="_blank" class="black">BORNEO TEKNOMEDIA</a>. <br/>
+                    <h5 class="black">PART OF BTEKNO!</h5>
+                    &copy; 2019 <a href="https://btekno.id" target="_blank" class="black">{{ env('APP_NAME') }}</a> - The easiest way to collect user feedback.<br/>
                     Some rights reserved.
                     <br/><br/>
-                    Maintained & developed by <a href="https://facebook.com/404vay" class="black">@404vay</a>
+                    Handcrafted by <a href="https://facebook.com/404vay" class="black">@404vay</a>
                 </div>
             </div>
             <div class="row mt-5">
