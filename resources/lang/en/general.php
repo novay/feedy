@@ -116,7 +116,7 @@ return [
 	'delete_response_desc' => "You're about to delete a response from this feedback.<br><br><strong>This action cannot be undone.</strong>", 
 
 	# Integration
-	'widget_embed' => 'Widet Embed', 
+	'widget_embed' => 'Widget Embed', 
 	'standalone_page' => 'Standalone Page', 
 	'copy_your_code' => 'Copy your code', 
 	'copy_code' => 'Copy Code ', 

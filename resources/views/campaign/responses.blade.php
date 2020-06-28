@@ -16,7 +16,7 @@
 			<div class="card-body">
 				<p>{{ __('general.response_empty') }}</p>
 				<br>
-				<strong>{!! __('general_response_setup', ['route' => route('campaign.integrations', $data->uuid)]) !!}</strong>
+				<strong>{!! __('general.response_setup', ['route' => route('campaign.integrations', $data->uuid)]) !!}</strong>
 			</div>
 		@else
 			<div class="table-responsive">
