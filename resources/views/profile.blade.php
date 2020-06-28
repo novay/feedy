@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Profile')
+@section('title', __('general.profile'))
 
 @section('content')
 	<div class="page-main">
@@ -27,8 +27,8 @@
 						</div>
 						<div class="card">
 							<div class="card-body">
-								<h5><i class="fe fe-github mr-2"></i> Simply another "ISENG" projects!</h5>
-								<p>If you are curious and want to make something like {{ env('APP_NAME') }}, you can simpy clone this project through my Github page. Thanks!</p>
+								<h5><i class="fe fe-github mr-2"></i> Another "ONE DAY" projects!</h5>
+								<p>If you are curious and want to make something like <b>{{ env('APP_NAME') }}</b>, you can simpy clone this project through my Github page. Thanks!</p>
 								<h5>Usage Dependencies:</h5>
 								<ul>
 									<li><a href="https://github.com/laravel/laravel" target="_blank">Laravel</a> by Taylor Otwell</li>
