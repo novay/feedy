@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700" rel="stylesheet">
     <link href="{{ asset('assets/dashboard/libs/fontawesome-pro/css/all.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" media="all" href="{{ asset('assets/dashboard/css/editor.css') }}">
+    <script>var postUrl = "{{ route('widget.submit', $data->uuid) }}";</script>
 </head>
 <body class="feedbackBody">
     <div class="lw-widget feedbackPage lw-widget_fullscreen" data-lw-onload>
@@ -61,6 +62,5 @@
     </div>
     <script src="{{ asset('assets/dashboard/js/vendors/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('assets/dashboard/js/feedy.js') }}"></script>
-    <script>var postUrl = "{{ route('widget.submit', $data->uuid) }}";</script>
 </body>
 </html>

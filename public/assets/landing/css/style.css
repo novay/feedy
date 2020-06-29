@@ -7475,8 +7475,7 @@ body {
 .navbar .navbar-brand {
   font-size: 1.5rem;
   font-weight: 900;
-  color: #129cc7;
-  text-transform: uppercase; }
+  color: #129cc7; }
 
 .navbar .navbar-nav .nav-item {
   margin: 0 .7rem; }
@@ -7846,3 +7845,31 @@ footer h5 {
 @media screen and (max-width: 768px) {
   .switcher-wrap {
     display: none; } }
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem .5rem;
+  }
+  .pb-7, .py-7 {
+    padding-bottom: 5rem !important;
+  }
+  .pt-7, .py-7 {
+    padding-top: 5rem !important;
+}
+.pt-6, .py-6 {
+    padding-top: 3rem !important;
+}
+.logo {
+  width: 120px;
+}
+.heading-black {
+  font-size: 25px;
+}
+.feature-boxes .box {
+    padding: 0rem 2rem;
+}
+
+.lead {
+  font-size: 17px;
+}
+}

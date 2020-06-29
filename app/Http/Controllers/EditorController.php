@@ -44,12 +44,12 @@ class EditorController extends Controller
         $data = $this->data->uuid($uuid)->firstOrFail();
         $data->update([
             'name' => $request->name, 
-            'enable_rating' => $request->filled('enable_rating') ? 1 : 0, 
-            'enable_email' => $request->filled('enable_email') ? 1 : 0, 
             'title' => $request->title, 
             'subtitle' => $request->subtitle, 
             'confirm_title' => $request->tyTitle, 
             'confirm_subtitle' => $request->tyMessage, 
+            'enable_rating' => $request->filled('enable_rating') ? 1 : 0, 
+            'enable_email' => $request->filled('enable_email') ? 1 : 0, 
             'widget_color' => $request->widget_color, 
             'widget_position' => $request->widget_position, 
             'widget_type' => $request->widget_type, 

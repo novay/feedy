@@ -48,7 +48,7 @@ return [
 	'right' => 'Right', 
 	'widget_type' => 'Widget Type', 
 	'floating' => 'Floating', 
-	'sidebar' => 'Siderbar', 
+	'sidebar' => 'Sidebar', 
 	'floating' => 'Floating', 
 	'fullscreen' => 'Fullscreen',
 	'enable_rating' => 'Enable ratings',

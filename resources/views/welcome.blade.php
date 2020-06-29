@@ -50,7 +50,7 @@
                 <div class="col-md-8 col-sm-10 col-12 mx-auto my-auto text-center">
                     <div class="fa-5x mb-3">
                         {{-- &#x1F4EC --}}
-                        <img src="{{ asset('assets/landing/img/logo.png') }}" width="200">
+                        <img src="{{ asset('assets/landing/img/logo.png') }}" width="200" class="logo">
                     </div>
                     <h2 class="heading-black">The easy way to collect feedback.</h2>
                     <p class="lead py-3">Functionality & simplicity at its core, {{ env('APP_NAME') }} makes it easier than ever to collect valuable feedback from users, with zero-fuss.</p>

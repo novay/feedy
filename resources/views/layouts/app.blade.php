@@ -7,10 +7,6 @@
     <link rel="shortcut icon" href="{{ asset('assets/landing/img/logo.png') }}" type="image/png">
     <title>@yield('title') | {{ config('app.name', 'Laravel') }}</title>
 
-    <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
     <link href="{{ asset('assets/dashboard/libs/fontawesome-pro/css/all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/dashboard/css/dashboard.css') }}" rel="stylesheet" />
 

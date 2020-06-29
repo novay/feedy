@@ -22,7 +22,7 @@ class WidgetController extends Controller
     }
 
     /**
-     * Show the editor page.
+     * Show the standalone feedback page.
      *
      * @param String $uuid
      * @return \Illuminate\View\View

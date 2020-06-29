@@ -3,13 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Campaign;
-use App\Response;
+use Illuminate\Support\Str;
 use Ramsey\Uuid\Uuid;
 
-use App\Exports\ResponseExport;
-use Maatwebsite\Excel\Facades\Excel;
-use Illuminate\Support\Str;
+use App\Campaign;
+use App\Response;
 
 class CampaignController extends Controller
 {
@@ -30,7 +28,7 @@ class CampaignController extends Controller
      * Create a new feedback.
      *
      * @param \Illuminate\Http\Request
-     * @return \Illuminate\View\View
+     * @return \Illuminate\Route\Route
      */
     public function create(Request $request)
     {
@@ -109,8 +107,6 @@ class CampaignController extends Controller
         return redirect()->back();
     }
 
-    
-
     /**
      * Show the data manager page.
      *
@@ -125,7 +121,7 @@ class CampaignController extends Controller
     }
 
     /**
-     * Show the delete confirmation campaign.
+     * Show the delete confirmation page.
      *
      * @param String $uuid
      * @return \Illuminate\View\View
@@ -141,7 +137,7 @@ class CampaignController extends Controller
      * Export responses list to CSV.
      *
      * @param Illuminate\Http\Request
-     * @param String $id
+     * @param String $uuid
      * @return \Illuminate\Contracts\Support\Renderable
      */
     public function export(Request $request, $uuid)
@@ -182,7 +178,6 @@ class CampaignController extends Controller
     /**
      * Delete a response.
      *
-     * @param Illuminate\Http\Request
      * @param String $uuid
      * @param String $id
      * @return \Illuminate\Contracts\Support\Renderable
