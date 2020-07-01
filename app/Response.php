@@ -20,6 +20,6 @@ class Response extends Model
      */
     public function campaign() 
     {
-        return $this->hasMany('App\Campaign');
+        return $this->belongsTo('App\Campaign');
     }
 }
