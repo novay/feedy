@@ -39,34 +39,7 @@ Below is just a walk-through of the information you'll need to give the installe
 
 1. From your projects root folder in terminal run:
 
-    Laravel 5.6, 5.7, and 5.8+ use:
 
-    ```
-        composer require jeremykenedy/laravel-users
-    ```
-
-    Laravel 5.5 use:
-
-    ```
-        composer require jeremykenedy/laravel-users:2.0.2
-    ```
-
-    Laravel 5.4 use:
-
-    ```
-        composer require jeremykenedy/laravel-users:1.4.0
-    ```
-
-    Laravel 5.3 use:
-
-    ```
-        composer require jeremykenedy/laravel-users:1.3.0
-    ```
-
-    Laravel 5.2 use:
-    ```
-        composer require jeremykenedy/laravel-users:1.2.0
-    ```
 
 2. Register Package
 * Laravel 5.5, 5.6, and 5.7+
