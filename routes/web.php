@@ -2,9 +2,26 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'HomeController@welcome');
-
 Auth::routes();
+
+// Install
+Route::prefix('install')->group(function () {
+    Route::middleware('install')->group(function () {
+        Route::get('/', 'InstallController@index')->name('install');
+        Route::get('/requirements', 'InstallController@requirements')->name('install.requirements');
+        Route::get('/permissions', 'InstallController@permissions')->name('install.permissions');
+        Route::get('/database', 'InstallController@database')->name('install.database');
+        Route::get('/account', 'InstallController@account')->name('install.account');
+
+        Route::post('/database', 'InstallController@saveConfig');
+        Route::post('/account', 'InstallController@saveDatabase');
+    });
+
+    Route::get('/complete', 'InstallController@complete')->name('install.complete');
+});
+
+Route::get('/', 'HomeController@welcome')->middleware('installed')->name('welcome');
+
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile', 'HomeController@profile')->name('profile');
 Route::post('/profile', 'HomeController@update');
